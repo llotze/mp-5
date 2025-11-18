@@ -50,7 +50,15 @@ export default function ShortenerForm() {
             {error && <div className="text-red-500 font-medium">{error}</div>}
             {shortUrl && (
                 <div className="mt-2 text-zinc-100">
-                    Shortened URL: <a href={shortUrl} className="text-blue-400 underline">{shortUrl}</a>
+                    Shortened URL:{" "}
+                    <a
+                        href={shortUrl}
+                        className="text-blue-400 underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {shortUrl}
+                    </a>
                 </div>
             )}
         </form>
