@@ -44,7 +44,7 @@ export default function ShortenerForm() {
                 required
                 className="border border-zinc-700 bg-zinc-900 text-zinc-100 p-2 w-full rounded"
             />
-            <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded font-semibold">
+            <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded font-semibold">
                 Shorten
             </button>
             {error && <div className="text-red-500 font-medium">{error}</div>}
